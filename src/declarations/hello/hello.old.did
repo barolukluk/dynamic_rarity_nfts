@@ -1,0 +1,31 @@
+type TokenData = 
+ record {
+   dnaType: text;
+   id: nat;
+   rarity: float64;
+   tokenURI: text;
+   transactionHistory: vec text;
+ };
+service : {
+  approve: (principal, nat) -> ();
+  balanceOf: (principal) -> (opt nat);
+  clearEveryThing: () -> ();
+  getAllNFTs: () -> (vec TokenData);
+  getAllOwnedNFTs: () -> (vec TokenData);
+  getApproved: (nat) -> (principal);
+  getRarity: (nat) -> (float64) query;
+  getTokenPk: () -> (nat) query;
+  getTransactionHistory: (nat) -> (vec principal) query;
+  getTransactionHistoryTextFormat: (nat) -> (vec text) query;
+  isApprovedForAll: (principal, principal) -> (bool);
+  mint: (text) -> (nat);
+  name: () -> (text) query;
+  ownerOf: (nat) -> (opt principal);
+  setApprovalForAll: (principal, bool) -> () oneway;
+  symbol: () -> (text) query;
+  tokenDNA: (nat) -> (text) query;
+  tokenData: (nat) -> (TokenData) query;
+  tokenURI: (nat) -> (opt text) query;
+  transferFrom: (principal, principal, nat) -> () oneway;
+  whoami: () -> (principal) query;
+}

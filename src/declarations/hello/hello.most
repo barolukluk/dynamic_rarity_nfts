@@ -1,0 +1,22 @@
+type TokenData =
+  {
+    dnaType : Text;
+    id : Nat;
+    rarity : Float;
+    tokenURI : Text;
+    transactionHistory : [Text]
+  };
+actor {
+  stable var _name : Text;
+  stable var _symbol : Text;
+  stable var balancesEntries : [(Principal, Nat)];
+  stable var operatorApprovalsEntries : [(Principal, [Principal])];
+  stable var ownersEntries : [(Nat, Principal)];
+  stable var raritiesEntries : [(Nat, Float)];
+  stable var tokenApprovalsEntries : [(Nat, Principal)];
+  stable var tokenDNAsEntries : [(Nat, Text)];
+  stable var tokenDatasEntries : [(Nat, TokenData)];
+  stable var tokenPk : Nat;
+  stable var tokenURIEntries : [(Nat, Text)];
+  stable var transactionHistoriesEntries : [(Nat, [Principal])]
+};

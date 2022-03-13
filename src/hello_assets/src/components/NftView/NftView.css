@@ -1,0 +1,16 @@
+.image-overlay img{
+  position: absolute;
+  left: 20vw;
+  top:20vh;
+  width: 25vw;
+  height: 60vh;
+}
+  
+.image-overlay__left-top img{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 50vw;
+  height: auto;
+}
+  
