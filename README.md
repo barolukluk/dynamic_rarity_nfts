@@ -8,7 +8,7 @@ I am not a experienced react developer, so the ui part of the project is not as 
 
 Notes:
 1- Clicking the mint button without connecting your wallet will not work, you must first connect your wallet.
-2- If you connect your wallet and click "collected NFTs" button, you can see your nfts and transfer them.
+2- If you connect your wallet and click "collected NFTs" button, you can see your nfts and transfer them. If you don't connect your wallet and click the collected NFTs button, you will see nothing but ugly "waiting" text.
 3- If you click "view all NFTs" button you can see all the NFTs already minted.
 4- All rarity indexes are recalculated and dynamically changed after each mint.
 5-If the button is greyed out, it is running in the background and will be back to normal shortly.
