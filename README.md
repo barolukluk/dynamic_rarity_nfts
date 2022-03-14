@@ -11,3 +11,4 @@ Notes:
 2- If you connect your wallet and click "collected NFTs" button, you can see your nfts and transfer them.
 3- If you click "view all NFTs" button you can see all the NFTs already minted.
 4- All rarity indexes are recalculated and dynamically changed after each mint.
+5-If the button is greyed out, it is running in the background and will be back to normal shortly.
